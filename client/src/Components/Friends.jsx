@@ -28,7 +28,7 @@ const Friends = ({ friendId, name, subtitle, userPicturePath }) => {
   const patchFriend = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3001/users/${_id}/${friendId}`,
+        `https://social-media-server-hazel.vercel.app/users/${_id}/${friendId}`,
         {
           method: "PATCH",
           headers: {
